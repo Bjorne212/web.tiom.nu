@@ -20,7 +20,9 @@ body {
 .site-main {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .content-card {
@@ -30,7 +32,29 @@ body {
   padding: 1.5rem;
 }
 
-button {
+.flow-grid,
+.project-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.flow-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.flow-step,
+.project-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+}
+
+.order-flow {
+  padding-left: 1.25rem;
+}
+
+#start-order-button {
   border: 0;
   background: #2563eb;
   color: #ffffff;
@@ -39,6 +63,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#start-order-button:hover {
   background: #1d4ed8;
 }
