@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <h1>Webbutveckling för företag och projekt</h1>
-      <p>En enkel startsida med tydligt flöde, tidigare projekt och hur beställning går till.</p>
+    <header class="navbar">
+      <div class="container">
+        <a class="logo-link" href="./">TIOM Web</a>
+        <nav class="nav-links">
+          <a href="#flode">Flöde</a>
+          <a href="#projekt">Projekt</a>
+          <a href="#bestallning" class="nav-cta">Beställning</a>
+        </nav>
+      </div>
     </header>
 
     <main class="site-main">
-      <section class="content-card">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Webbutveckling</p>
+          <h1>Webbutveckling för företag och projekt</h1>
+          <p>Enkel och tydlig struktur med samma visuella uttryck som TIOM.</p>
+        </div>
+      </section>
+
+      <section class="content-section" id="flode">
+        <div class="container content-card">
         <h2>Tydligt flöde</h2>
         <div class="flow-grid">
           <article class="flow-step">
@@ -33,9 +48,11 @@
             <p>Vi följer upp och itererar för att skapa bättre resultat över tid.</p>
           </article>
         </div>
+        </div>
       </section>
 
-      <section class="content-card">
+      <section class="content-section" id="projekt">
+        <div class="container content-card">
         <h2>Tidigare projekt</h2>
         <div class="project-list">
           <article class="project-card">
@@ -51,9 +68,11 @@
             <p>Konverteringsoptimerad sida med mätbara CTA-flöden.</p>
           </article>
         </div>
+        </div>
       </section>
 
-      <section class="content-card">
+      <section class="content-section" id="bestallning">
+        <div class="container content-card">
         <h2>Så går en beställning till</h2>
         <ol class="order-flow">
           <li><strong>Kontakt:</strong> Du beskriver behov och mål.</li>
@@ -64,11 +83,14 @@
         </ol>
         <button id="start-order-button" type="button">Starta beställning</button>
         <p id="message" aria-live="polite"></p>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <small>&copy; 2026 web.tiom.nu</small>
+      <div class="container">
+        <small>&copy; 2026 TIOM</small>
+      </div>
     </footer>
 
     <script src="script.js"></script>

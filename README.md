@@ -4,5 +4,5 @@ Web development website. Meant to more showcase web projects and a different aud
 ## Basic structure
 
 - `index.html` - page structure
-- `styles.css` - base styles
+- `styles.css` - TIOM-inspired layout/theme styles
 - `script.js` - starter JavaScript
