@@ -1,12 +1,10 @@
-# HTTPS-omdirigering
-# Cloudflare Pages omdirigerar automatiskt till HTTPS, men vi explicit konfigurerar det
+# Cloudflare Pages: destinationer i _redirects maste vara relativa URL:er.
+# HTTPS tvingas redan av Cloudflare Pages.
+# www -> apex (eller tvartom) ska sattas som Redirect Rule i Cloudflare Dashboard.
 
-# Omdirigera HTTP till HTTPS (Cloudflare hanterar detta automatiskt, men explicit för säkerhet)
-http://* https://:splat 301
-
-# Omdirigera www till non-www (om önskvärt)
-https://www.tiom.nu/* https://tiom.nu/:splat 301
-
-# Omdirigera gamla sidor eller omstrukturerade URL:er (lägg till efter behov)
+# Exempel pa giltiga, relativa redirects
 # /gammal-sida /index.html 301
 # /gammal-path/* /ny-path/:splat 301
+
+/process /process.html 301
+/pricing /pricing.html 301
