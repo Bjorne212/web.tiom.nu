@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Priser - TIOM Web</title>
-    <meta name="description" content="Tydliga paket och priser för webbutveckling. Välj rätt nivå för ditt företag och få en modern webbplats som driver resultat." />
+    <meta name="description" content="Tydliga paket och priser för webbutveckling. Välj rätt nivå för ditt företag och få en modern webbplats med en snygg och professionell närvara online." />
     <meta name="theme-color" content="#2563eb" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a class="nav-logo" href="index.html">TIOM Web</a>
+            <a class="nav-logo" href="index.html"><img src="media/images/TIOM Black.svg" alt="TIOM Web - Hem"></a>
             <div class="nav-links">
                 <a href="index.html#projects" class="nav-link">Portfolio</a>
                 <a href="process.html" class="nav-link">Så går det till</a>
@@ -22,30 +26,43 @@
         </div>
     </nav>
 
-    <section class="pricing-hero">
+    <section class="pricing-hero bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-1"></span>
+            <span class="hero-bubble hero-bubble-2"></span>
+            <span class="hero-bubble hero-bubble-3"></span>
+            <span class="hero-bubble hero-bubble-4"></span>
+            <span class="hero-bubble hero-bubble-5"></span>
+            <span class="hero-bubble hero-bubble-6"></span>
+        </div>
         <div class="container pricing-hero-content">
             <p class="hero-eyebrow">Pricing</p>
-            <h1 class="hero-title">Tydliga Priser För Din Nya Webbplats</h1>
-            <p class="hero-subtitle">Välj paket utifrån ditt läge idag. Alla paket inkluderar strategi, design och utveckling med fokus på resultat.</p>
+            <h1 class="hero-title">Tydliga priser för din nya webbplats</h1>
+            <p class="hero-subtitle">Välj paket utifrån ditt läge idag. Alla paket inkluderar strategi, design och utveckling med fokus på en snygg och professionell närvaro online.</p>
             <p class="pricing-note">Alla priser anges exkl. moms. Exakt offert ges efter kort behovsanalys.</p>
         </div>
     </section>
 
-    <section class="template-offer-section">
+    <section class="template-offer-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-1"></span>
+            <span class="hero-bubble hero-bubble-2"></span>
+            <span class="hero-bubble hero-bubble-3"></span>
+            <span class="hero-bubble hero-bubble-4"></span>
+        </div>
         <div class="container template-offer-grid">
             <article class="template-offer-card">
                 <p class="pricing-tier">Template-nivå</p>
                 <h2 class="pricing-name">Snabb Start Med Färdig Struktur</h2>
-                <p class="pricing-price">från 6 900 kr</p>
-                <p class="pricing-desc">En icke-skräddarsydd lösning där du väljer en färdig mall som vi anpassar med ditt innehåll, färger och budskap.</p>
+                <p class="pricing-price">från 4 000 kr</p>
+                <p class="pricing-desc">En icke-skräddarsydd lösning där du väljer en färdig mall som jag anpassar med ditt innehåll, färger och budskap.</p>
                 <ul class="pricing-features">
                     <li>1-2 sidor med färdig struktur</li>
-                    <li>Design från utvald template</li>
+                    <li>Design från template</li>
                     <li>Anpassning till varumärke och innehåll</li>
                     <li>Grundläggande SEO</li>
-                    <li>Leverans 3-7 dagar</li>
                 </ul>
-                <a class="btn btn-primary" href="templates.html">Se Alla Templates</a>
+                <button class="btn btn-primary" data-wizard="template" data-package="Template - Snabb Start Med Färdig Struktur">Välj Denna Nivå</button>
             </article>
 
             <aside class="template-preview" aria-label="Preview av template-upplägg">
@@ -67,89 +84,123 @@
         </div>
     </section>
 
-    <section class="pricing-section">
+    <section class="pricing-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-1"></span>
+            <span class="hero-bubble hero-bubble-3"></span>
+            <span class="hero-bubble hero-bubble-5"></span>
+            <span class="hero-bubble hero-bubble-6"></span>
+        </div>
         <div class="container">
             <div class="pricing-grid">
                 <article class="pricing-card">
                     <p class="pricing-tier">Start</p>
                     <h2 class="pricing-name">För Nya Företag</h2>
-                    <p class="pricing-price">från 9 900 kr</p>
+                    <p class="pricing-price">från 7 500kr</p>
                     <p class="pricing-desc">Perfekt för företag som behöver en snabb och professionell närvaro online.</p>
                     <ul class="pricing-features">
                         <li>1-3 sidor</li>
                         <li>Mobilanpassad design</li>
                         <li>Kontaktformulär</li>
                         <li>Grundläggande SEO</li>
-                        <li>Leverans 1-2 veckor</li>
                     </ul>
-                    <a class="btn btn-primary btn-block" href="index.html#contact">Boka Konsultation</a>
+                    <button class="btn btn-primary btn-block" data-wizard="start" data-package="Start - För Nya Företag">Boka Konsultation</button>
                 </article>
 
                 <article class="pricing-card pricing-card-featured">
-                    <p class="pricing-badge">Mest vald</p>
                     <p class="pricing-tier">Growth</p>
-                    <h2 class="pricing-name">För Växande Bolag</h2>
-                    <p class="pricing-price">från 19 900 kr</p>
-                    <p class="pricing-desc">För dig som vill ha ett starkt säljfokus och tydliga konverteringsflöden.</p>
+                    <h2 class="pricing-name">För Etablerad Närvaro</h2>
+                    <p class="pricing-price">från 15 000 kr</p>
+                    <p class="pricing-desc">För dig som vill ha en tydlig, professionell och varumärkesstark webbplats.</p>
                     <ul class="pricing-features">
                         <li>4-8 sidor</li>
                         <li>Custom design & struktur</li>
-                        <li>Konverteringsoptimerade CTA-flöden</li>
+                        <li>Tydliga CTA-flöden och informationsstruktur</li>
                         <li>Teknisk SEO + prestandaoptimering</li>
-                        <li>Leverans 2-4 veckor</li>
                     </ul>
-                    <a class="btn btn-primary btn-block" href="index.html#contact">Starta Projekt</a>
+                    <button class="btn btn-primary btn-block" data-wizard="growth" data-package="Growth - För Etablerad Närvaro">Starta Projekt</button>
                 </article>
 
                 <article class="pricing-card">
                     <p class="pricing-tier">Scale</p>
                     <h2 class="pricing-name">För Ambitiösa Team</h2>
-                    <p class="pricing-price">från 34 900 kr</p>
+                    <p class="pricing-price">pris på offert</p>
                     <p class="pricing-desc">När du behöver en större webbplats eller e-handel med fler funktioner.</p>
                     <ul class="pricing-features">
                         <li>8+ sidor eller e-handel</li>
                         <li>Avancerad UX och informationsarkitektur</li>
-                        <li>Integrationer (CRM, bokning, nyhetsbrev)</li>
+                        <li>Integrationer (CRM, formulär, nyhetsbrev)</li>
                         <li>Utökad SEO-struktur</li>
-                        <li>Leverans 4-8 veckor</li>
                     </ul>
-                    <a class="btn btn-primary btn-block" href="index.html#contact">Begär Offert</a>
+                    <button class="btn btn-primary btn-block" data-wizard="scale" data-package="Scale - För Ambitiösa Team">Begär Offert</button>
                 </article>
             </div>
+
+            <aside class="pricing-clarity" aria-label="Information om upplägg och tillägg">
+                <h2>Enkelt, smidigt och prisvärt upplägg</h2>
+                <p>Jag fokuserar på att göra det enkelt, smidigt och kostnadseffektivt för ditt företag att komma igång snabbt. Därför ingår inte löpande förvaltning eller liknande tjänster i grundpaketen.</p>
+                <p>Behöver du underhåll, uppdateringar eller fortsatt stöd efter lansering går det att lägga till separat.</p>
+            </aside>
+
+            <aside class="hosting-offer" aria-label="Hosting som tillval">
+                <div class="hosting-offer-top">
+                    <p class="pricing-tier">Hosting</p>
+                </div>
+                <p>Jag erbjuder hosting för 150 kr/mån som ett enkelt tillval om du vill att jag sköter drift och publicering.</p>
+                <ul class="hosting-list">
+                    <li>Drift och publicering</li>
+                    <li>Löpande uppdateringar vid behov</li>
+                    <li>Fast pris: 150 kr/mån</li>
+                </ul>
+            </aside>
         </div>
     </section>
 
-    <section class="addons-section">
+    <section class="addons-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-2"></span>
+            <span class="hero-bubble hero-bubble-4"></span>
+            <span class="hero-bubble hero-bubble-6"></span>
+        </div>
         <div class="container">
             <h2 class="section-heading">Vanliga Tillägg</h2>
-            <p class="section-lead">Bygg på ditt paket när du vill växa vidare.</p>
+            <p class="section-lead">Lägg till funktioner när du behöver dem.</p>
             <div class="addons-grid">
                 <div class="addon-item">
                     <h3>Löpande underhåll</h3>
-                    <p>från 1 490 kr / mån</p>
+                    <p class="addon-desc">Håll sidan snabb, uppdaterad och trygg utan att du behöver lyfta ett finger.</p>
+                    <p class="addon-price">från 1 490 kr / mån</p>
                 </div>
                 <div class="addon-item">
                     <h3>Extra landningssida</h3>
-                    <p>från 2 900 kr</p>
+                    <p class="addon-desc">Fånga fler kunder med en sida byggd för en tydlig kampanj eller tjänst.</p>
+                    <p class="addon-price">från 1 000 kr</p>
                 </div>
                 <div class="addon-item">
-                    <h3>Copywriting & budskap</h3>
-                    <p>från 3 900 kr</p>
+                    <h3>Inlägg och uppdateringar</h3>
+                    <p class="addon-desc">Håll sajten levande med nytt innehåll som stärker förtroende och synlighet.</p>
+                    <p class="addon-price">från 500 kr</p>
                 </div>
                 <div class="addon-item">
                     <h3>SEO-fördjupning</h3>
-                    <p>från 4 900 kr</p>
+                    <p class="addon-desc">Ta nästa steg i Google med djupare optimering av innehall, teknik och struktur.</p>
+                    <p class="addon-price">från 4 900 kr</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
+    <section class="faq-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-1"></span>
+            <span class="hero-bubble hero-bubble-4"></span>
+            <span class="hero-bubble hero-bubble-5"></span>
+        </div>
         <div class="container faq-wrap">
             <h2 class="section-heading">Vanliga Frågor</h2>
             <details class="faq-item" open>
                 <summary>Vad avgör slutpriset?</summary>
-                <p>Antal sidor, funktioner, integrationer och tidsram. Du får alltid en tydlig offert innan vi startar.</p>
+                <p>Antal sidor, funktioner, integrationer och tidsram. Du får alltid en tydlig offert innan jag startar.</p>
             </details>
             <details class="faq-item">
                 <summary>Vad är skillnaden mellan Template och skräddarsytt?</summary>
@@ -157,11 +208,15 @@
             </details>
             <details class="faq-item">
                 <summary>Kan jag uppgradera paket senare?</summary>
-                <p>Ja, absolut. Många börjar med Start eller Growth och bygger vidare när verksamheten växer.</p>
+                <p>Ja, absolut. Många börjar med Start eller Growth och anpassar sedan vidare när behoven förändras.</p>
             </details>
             <details class="faq-item">
                 <summary>Ingår support efter lansering?</summary>
-                <p>Ja. Du får stöd efter lansering, och kan även välja löpande underhållspaket.</p>
+                <p>Nej, för att hålla priserna låga är support och uppdateringar ett tillval.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Erbjuder du hosting?</summary>
+                <p>Ja. Hosting erbjuds som ett separat tillval med löpande kostnad, så du kan välja det endast om du behöver det.</p>
             </details>
         </div>
     </section>
@@ -169,7 +224,7 @@
     <section class="pricing-cta">
         <div class="container">
             <h2 class="section-heading">Osäker på vilket paket som passar?</h2>
-            <p class="section-lead">Berätta kort om ditt projekt så rekommenderar vi rätt nivå.</p>
+            <p class="section-lead">Berätta kort om ditt projekt så rekommenderar jag rätt nivå.</p>
             <a class="btn btn-primary btn-large" href="index.html#contact">Få Rekommendation</a>
         </div>
     </section>
@@ -179,6 +234,113 @@
             <p>&copy; 2026 TIOM Web. Alla rättigheter förbehållna.</p>
         </div>
     </footer>
+
+    <!-- Order Wizard Modal -->
+    <div id="order-wizard" class="wizard-modal" role="dialog" aria-labelledby="wizard-title" aria-hidden="true">
+        <div class="wizard-overlay"></div>
+        <div class="wizard-container">
+            <div class="wizard-header">
+                <h2 id="wizard-title">Beställ <span class="wizard-package-name"></span></h2>
+                <button class="wizard-close" data-action="close" aria-label="Stäng">&times;</button>
+            </div>
+
+            <!-- Step 1: Choose Page Types -->
+            <div class="wizard-step" id="wizard-step-1" data-step="1">
+                <h3 class="wizard-step-title">Vilka sidor behöver du?</h3>
+                <p class="wizard-step-desc">Välj de sidtyper din webbplats behöver:</p>
+                
+                <div class="wizard-page-types">
+                    <label class="page-type-option">
+                        <input type="checkbox" name="page-type" value="Hemsida">
+                        <span class="page-type-label">Hemsida</span>
+                        <span class="page-type-desc">Startsida med hero och overview</span>
+                    </label>
+                    <label class="page-type-option">
+                        <input type="checkbox" name="page-type" value="Om oss">
+                        <span class="page-type-label">Om oss</span>
+                        <span class="page-type-desc">Presentera ditt företag</span>
+                    </label>
+                    <label class="page-type-option">
+                        <input type="checkbox" name="page-type" value="Tjänster">
+                        <span class="page-type-label">Tjänster</span>
+                        <span class="page-type-desc">Beskriv vad du erbjuder</span>
+                    </label>
+                    <label class="page-type-option">
+                        <input type="checkbox" name="page-type" value="Portfolio">
+                        <span class="page-type-label">Portfolio/Projekt</span>
+                        <span class="page-type-desc">Visa tidigare arbeten</span>
+                    </label>
+                    <label class="page-type-option">
+                        <input type="checkbox" name="page-type" value="Blogg">
+                        <span class="page-type-label">Blogg</span>
+                        <span class="page-type-desc">Artiklar och inlägg</span>
+                    </label>
+                    <label class="page-type-option">
+                        <input type="checkbox" name="page-type" value="Kontakt">
+                        <span class="page-type-label">Kontakt</span>
+                        <span class="page-type-desc">Kontaktformulär och info</span>
+                    </label>
+                </div>
+
+                <div class="wizard-actions">
+                    <button class="btn btn-secondary" data-action="cancel">Avbryt</button>
+                    <button class="btn btn-primary" data-action="next">Nästa →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Summary & Submit -->
+            <div class="wizard-step" id="wizard-step-2" data-step="2">
+                <h3 class="wizard-step-title">Bekräfta ditt projekt</h3>
+                
+                <div class="wizard-summary">
+                    <div class="summary-item">
+                        <p class="summary-label">Paket:</p>
+                        <p class="summary-value" id="summary-package"></p>
+                    </div>
+                    <div class="summary-item">
+                        <p class="summary-label">Sidor du behöver:</p>
+                        <p class="summary-value" id="summary-pages"></p>
+                    </div>
+                </div>
+
+                <div class="wizard-form">
+                    <div class="form-group">
+                        <label for="wizard-name">Ditt namn *</label>
+                        <input type="text" id="wizard-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="wizard-email">E-post *</label>
+                        <input type="email" id="wizard-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="wizard-company">Företag</label>
+                        <input type="text" id="wizard-company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="wizard-phone">Telefon</label>
+                        <input type="tel" id="wizard-phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="wizard-message">Berätta kort om ditt projekt *</label>
+                        <textarea id="wizard-message" name="message" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="wizard-actions">
+                    <button class="btn btn-secondary" data-action="back" id="wizard-back-btn">← Tillbaka</button>
+                    <button class="btn btn-primary" data-action="submit" id="wizard-submit-btn">Skicka Förfrågan</button>
+                </div>
+            </div>
+
+            <!-- Success Message -->
+            <div class="wizard-step wizard-success" id="wizard-success" data-step="3">
+                <div class="success-icon">✓</div>
+                <h3>Tack för din förfrågan!</h3>
+                <p>Jag kontaktar dig inom 24 timmar för att diskutera ditt projekt i detalj.</p>
+                <button class="btn btn-primary" data-action="close">Stäng</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

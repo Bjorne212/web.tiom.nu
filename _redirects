@@ -1,0 +1,12 @@
+# HTTPS-omdirigering
+# Cloudflare Pages omdirigerar automatiskt till HTTPS, men vi explicit konfigurerar det
+
+# Omdirigera HTTP till HTTPS (Cloudflare hanterar detta automatiskt, men explicit för säkerhet)
+http://* https://:splat 301
+
+# Omdirigera www till non-www (om önskvärt)
+https://www.tiom.nu/* https://tiom.nu/:splat 301
+
+# Omdirigera gamla sidor eller omstrukturerade URL:er (lägg till efter behov)
+# /gammal-sida /index.html 301
+# /gammal-path/* /ny-path/:splat 301
