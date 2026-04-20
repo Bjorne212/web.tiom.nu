@@ -5,13 +5,16 @@
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
+            if (target.id === 'main-content') {
+                target.focus({ preventScroll: true });
+            }
         }
     });
 });
@@ -81,6 +84,9 @@ if ('IntersectionObserver' in window) {
 
 // Hero bubble parallax exit on scroll
 const navbar = document.querySelector('.navbar');
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+const devPopup = document.getElementById('dev-popup');
 
 if (navbar) {
     const updateNavbarState = () => {
@@ -94,6 +100,68 @@ if (navbar) {
     updateNavbarState();
     window.addEventListener('scroll', updateNavbarState, { passive: true });
     window.addEventListener('resize', updateNavbarState);
+}
+
+if (navbar && navToggle && navLinks) {
+    const closeNav = () => {
+        navbar.classList.remove('menu-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Öppna meny');
+    };
+
+    const toggleNav = () => {
+        const isOpen = navbar.classList.toggle('menu-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.setAttribute('aria-label', isOpen ? 'Stäng meny' : 'Öppna meny');
+    };
+
+    navToggle.addEventListener('click', toggleNav);
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            closeNav();
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!navbar.contains(event.target)) {
+            closeNav();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeNav();
+        }
+    });
+}
+
+if (devPopup) {
+    const closePopup = () => {
+        devPopup.setAttribute('aria-hidden', 'true');
+        devPopup.hidden = true;
+        document.body.classList.remove('popup-open');
+    };
+
+    const openPopup = () => {
+        devPopup.hidden = false;
+        requestAnimationFrame(() => {
+            devPopup.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('popup-open');
+        });
+    };
+
+    openPopup();
+
+    devPopup.querySelectorAll('[data-action="close-popup"]').forEach((button) => {
+        button.addEventListener('click', closePopup);
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && devPopup.getAttribute('aria-hidden') === 'false') {
+            closePopup();
+        }
+    });
 }
 
 const bubbleSections = Array.from(document.querySelectorAll('.hero, .bubble-zone'))

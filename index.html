@@ -7,18 +7,70 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="format-detection" content="telephone=no">
-    <title>TIOM Webutveckling</title>
+        <title>Webbutveckling i Sverige | TIOM Web - Professionella hemsidor</title>
     <meta name="description" content="Jag skapar moderna webbplatser som ger ditt företag en snygg och professionell närvaro online. Från design till lansering - snabbt och professionellt.">
     <meta name="theme-color" content="#2563eb">
+        <link rel="canonical" href="https://web.tiom.nu/">
+        <meta property="og:locale" content="sv_SE">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="TIOM Web">
+        <meta property="og:title" content="Webbutveckling i Sverige | TIOM Web - Professionella hemsidor">
+        <meta property="og:description" content="Jag skapar moderna webbplatser som ger ditt företag en snygg och professionell närvaro online. Från design till lansering - snabbt och professionellt.">
+        <meta property="og:url" content="https://web.tiom.nu/">
+        <meta property="og:image" content="https://web.tiom.nu/media/images/TIOM%20Favicon%2064x64.png">
+        <meta property="og:image:width" content="64">
+        <meta property="og:image:height" content="64">
+        <meta property="og:image:alt" content="TIOM Web logotyp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Webbutveckling i Sverige | TIOM Web - Professionella hemsidor">
+        <meta name="twitter:description" content="Jag skapar moderna webbplatser som ger ditt företag en snygg och professionell närvaro online. Från design till lansering - snabbt och professionellt.">
+        <meta name="twitter:image" content="https://web.tiom.nu/media/images/TIOM%20Favicon%2064x64.png">
     <link rel="icon" type="image/png" href="media/images/TIOM Favicon 64x64.png">
     <link rel="stylesheet" href="css/style.min.css">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "name": "TIOM Web",
+                    "url": "https://web.tiom.nu/",
+                    "inLanguage": "sv-SE"
+                },
+                {
+                    "@type": "LocalBusiness",
+                    "name": "TIOM Web",
+                    "url": "https://web.tiom.nu/",
+                    "email": "info@tiom.se",
+                    "telephone": "+46 70 653 35 35",
+                    "areaServed": "SE",
+                    "description": "Webbutveckling med fokus på moderna, professionella och snabba webbplatser for svenska foretag."
+                }
+            ]
+        }
+        </script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Hoppa till huvudinnehållet</a>
+    <div class="dev-popup" id="dev-popup" role="dialog" aria-modal="true" aria-labelledby="dev-popup-title" aria-describedby="dev-popup-desc" aria-hidden="true" hidden>
+        <div class="dev-popup-overlay" data-action="close-popup"></div>
+        <div class="dev-popup-panel">
+            <p class="dev-popup-badge">Under utveckling</p>
+            <h2 id="dev-popup-title">Sidan utvecklas fortfarande</h2>
+            <p id="dev-popup-desc">Du kan utforska innehållet, men vissa delar kan ändras medan sajten färdigställs.</p>
+            <button type="button" class="btn btn-primary" data-action="close-popup">Jag förstår</button>
+        </div>
+    </div>
     <!-- Navigation --> 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo"><img src="media/images/TIOM Black.svg" alt="TIOM Web - Hem"></a>
-            <div class="nav-links">
+            <a href="index.html" class="nav-logo"><img src="media/images/TIOM Black.svg" alt="TIOM Web - Hem" loading="lazy" decoding="async"></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="primary-nav">
                 <a href="#projects" class="nav-link">Portfolio</a>
                 <a href="/process.html" class="nav-link">Så går det till</a>
                 <a href="/pricing.html" class="nav-link">Priser</a>
@@ -27,6 +79,8 @@
             </div>
         </div>
     </nav>
+
+    <main id="main-content" role="main" tabindex="-1">
 
     <!-- Hero Section -->
     <section class="hero">
@@ -256,7 +310,8 @@
                     </div>
                     
                     <div class="form-group">
-                        <select name="project-type" required>
+                        <label for="project-type" class="visually-hidden">Vad behöver du? *</label>
+                        <select id="project-type" name="project-type" required>
                             <option value="">Vad behöver du? *</option>
                             <option value="ny-webbplats">Ny Webbplats</option>
                             <option value="e-handel">E-handelbutik</option>
@@ -281,6 +336,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
