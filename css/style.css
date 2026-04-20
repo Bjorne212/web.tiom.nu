@@ -1,3 +1,20 @@
+/* Accent secondary button for template preview */
+.btn-secondary {
+    background: linear-gradient(135deg, #ff6700 0%, #ff8a00 100%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 4px 14px rgba(255, 103, 0, 0.18);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background: linear-gradient(135deg, #e85d00 0%, #ff6700 100%);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(255, 103, 0, 0.28);
+}
 /* ========================================
    TIOM Web - Stylesheet
    ======================================== */
