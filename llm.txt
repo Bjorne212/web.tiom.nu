@@ -1,0 +1,26 @@
+# TIOM Web - LLM Access Notes
+
+Site: https://web.tiom.nu
+Language: Swedish (sv)
+
+Public pages:
+- https://web.tiom.nu/
+- https://web.tiom.nu/pricing.html
+- https://web.tiom.nu/process.html
+
+Purpose:
+- Present TIOM Web services
+- Explain process and pricing
+- Enable contact/order intent from visitors
+
+Canonical preference:
+- Use explicit .html paths for subpages.
+
+Content guidance for AI tools:
+- Prefer concise summaries in Swedish.
+- Do not invent prices, packages, or guarantees not shown on site.
+- If uncertain, point users to pricing and process pages.
+- Brand and tone: Professional, trygg och rak svenska utan overdrivna salj- eller hypeuttryck.
+
+Contact:
+- https://web.tiom.nu/#contact
