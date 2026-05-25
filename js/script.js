@@ -86,7 +86,6 @@ if ('IntersectionObserver' in window) {
 const navbar = document.querySelector('.navbar');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
-const devPopup = document.getElementById('dev-popup');
 
 if (navbar) {
     const updateNavbarState = () => {
@@ -132,34 +131,6 @@ if (navbar && navToggle && navLinks) {
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
             closeNav();
-        }
-    });
-}
-
-if (devPopup) {
-    const closePopup = () => {
-        devPopup.setAttribute('aria-hidden', 'true');
-        devPopup.hidden = true;
-        document.body.classList.remove('popup-open');
-    };
-
-    const openPopup = () => {
-        devPopup.hidden = false;
-        requestAnimationFrame(() => {
-            devPopup.setAttribute('aria-hidden', 'false');
-            document.body.classList.add('popup-open');
-        });
-    };
-
-    openPopup();
-
-    devPopup.querySelectorAll('[data-action="close-popup"]').forEach((button) => {
-        button.addEventListener('click', closePopup);
-    });
-
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && devPopup.getAttribute('aria-hidden') === 'false') {
-            closePopup();
         }
     });
 }

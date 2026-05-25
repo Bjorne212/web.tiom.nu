@@ -45,15 +45,6 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content">Hoppa till huvudinnehållet</a>
-    <div class="dev-popup" id="dev-popup" role="dialog" aria-modal="true" aria-labelledby="dev-popup-title" aria-describedby="dev-popup-desc" aria-hidden="true" hidden>
-        <div class="dev-popup-overlay" data-action="close-popup"></div>
-        <div class="dev-popup-panel">
-            <p class="dev-popup-badge">Under utveckling</p>
-            <h2 id="dev-popup-title">Sidan utvecklas fortfarande</h2>
-            <p id="dev-popup-desc">Du kan utforska innehållet, men vissa delar kan ändras medan sajten färdigställs.</p>
-            <button type="button" class="btn btn-primary" data-action="close-popup">Jag förstår</button>
-        </div>
-    </div>
     <nav class="navbar">
         <div class="nav-container">
             <a class="nav-logo" href="index.html"><img src="media/images/TIOM Black.svg" alt="TIOM Web - Hem" loading="lazy" decoding="async"></a>
@@ -63,7 +54,6 @@
                 <span></span>
             </button>
             <div class="nav-links" id="primary-nav">
-                <a href="index.html#projects" class="nav-link">Portfolio</a>
                 <a href="/process.html" class="nav-link is-active">Så går det till</a>
                 <a href="/pricing.html" class="nav-link">Priser</a>
                 <a href="index.html#contact" class="nav-link">Kontakt</a>
@@ -252,8 +242,39 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 TIOM Web. Alla rättigheter förbehållna.</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo" aria-label="TIOM Web - Hem">
+                    <img src="media/images/TIOM Black.svg" alt="TIOM Web" loading="lazy" decoding="async">
+                </a>
+                <p class="footer-tagline">Webbutveckling för svenska företag som vill ha en snygg, snabb och säker webbplats — med fokus på tydlig kommunikation, kvalitet och långsiktigt värde.</p>
+            </div>
+            <nav class="footer-col" aria-label="Sidlänkar">
+                <h2 class="footer-heading">Sidor</h2>
+                <ul class="footer-list">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="process.html">Så går det till</a></li>
+                    <li><a href="pricing.html">Priser</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2 class="footer-heading">Kontakt</h2>
+                <ul class="footer-list footer-contact">
+                    <li><a href="mailto:tiom.info@gmail.com">tiom.info@gmail.com</a></li>
+                    <li><a href="tel:+46706533535">+46 70 653 35 35</a></li>
+                    <li><span>Linköping, Sverige</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 TIOM Web. Alla rättigheter förbehållna.</p>
+                <ul class="footer-legal">
+                    <li><a href="villkor.html">Villkor</a></li>
+                    <li><a href="integritetspolicy.html">Integritetspolicy</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 

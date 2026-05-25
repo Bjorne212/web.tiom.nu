@@ -45,15 +45,6 @@
 </head>
 <body>
     <a class="skip-link" href="#main-content">Hoppa till huvudinnehållet</a>
-    <div class="dev-popup" id="dev-popup" role="dialog" aria-modal="true" aria-labelledby="dev-popup-title" aria-describedby="dev-popup-desc" aria-hidden="true" hidden>
-        <div class="dev-popup-overlay" data-action="close-popup"></div>
-        <div class="dev-popup-panel">
-            <p class="dev-popup-badge">Under utveckling</p>
-            <h2 id="dev-popup-title">Sidan utvecklas fortfarande</h2>
-            <p id="dev-popup-desc">Du kan utforska innehållet, men vissa delar kan ändras medan sajten färdigställs.</p>
-            <button type="button" class="btn btn-primary" data-action="close-popup">Jag förstår</button>
-        </div>
-    </div>
     <nav class="navbar">
         <div class="nav-container">
             <a class="nav-logo" href="index.html"><img src="media/images/TIOM Black.svg" alt="TIOM Web - Hem" loading="lazy" decoding="async"></a>
@@ -63,7 +54,6 @@
                 <span></span>
             </button>
             <div class="nav-links" id="primary-nav">
-                <a href="index.html#projects" class="nav-link">Portfolio</a>
                 <a href="/process.html" class="nav-link">Så går det till</a>
                 <a href="/pricing.html" class="nav-link is-active">Priser</a>
                 <a href="index.html#contact" class="nav-link">Kontakt</a>
@@ -91,35 +81,6 @@
         </div>
     </section>
 
-    <section class="template-offer-section bubble-zone">
-        <div class="hero-bubbles" aria-hidden="true">
-            <span class="hero-bubble hero-bubble-1"></span>
-            <span class="hero-bubble hero-bubble-2"></span>
-            <span class="hero-bubble hero-bubble-3"></span>
-            <span class="hero-bubble hero-bubble-4"></span>
-        </div>
-        <div class="container template-offer-grid">
-            <article class="template-offer-card">
-                <p class="pricing-tier">Template-nivå</p>
-                <h2 class="pricing-name">Snabb Start Med Färdig Struktur</h2>
-                <p class="pricing-price">från 4 000 kr</p>
-                <p class="pricing-desc">En icke-skräddarsydd lösning där du väljer en färdig mall som jag anpassar med ditt innehåll, färger och budskap.</p>
-                <ul class="pricing-features">
-                    <li>1-2 sidor med färdig struktur</li>
-                    <li>Design från template</li>
-                    <li>Anpassning till varumärke och innehåll</li>
-                    <li>Grundläggande SEO</li>
-                </ul>
-                <button class="btn btn-primary" data-wizard="template" data-package="Template - Snabb Start Med Färdig Struktur">Starta projekt</button>
-            </article>
-
-            <aside class="template-preview" aria-label="Preview av template-upplägg">
-                <video class="template-preview-video" src="media/videos/Template video 480p.mp4" autoplay muted loop playsinline poster="media/images/TIOM%20Web%20OG%20Banner.svg" style="width:100%;border-radius:1rem;margin-bottom:1rem;object-fit:cover;" aria-label="Videoexempel på template-anpassning"></video>
-                <a href="https://template.tiom.nu" class="btn btn-secondary btn-block" style="margin-top:1rem;" target="_blank" rel="noopener">Se exempelanpassningar för olika industrier -&gt;</a>
-            </aside>
-        </div>
-    </section>
-
     <section class="pricing-section bubble-zone">
         <div class="hero-bubbles" aria-hidden="true">
             <span class="hero-bubble hero-bubble-1"></span>
@@ -129,32 +90,35 @@
         </div>
         <div class="container">
             <div class="pricing-grid">
-                <article class="pricing-card">
+                <article class="pricing-card pricing-card-featured">
+                    <p class="pricing-badge">Mest flexibelt</p>
                     <p class="pricing-tier">Start</p>
-                    <h2 class="pricing-name">För Nya Företag</h2>
-                    <p class="pricing-price">från 7 500kr</p>
-                    <p class="pricing-desc">Perfekt för företag som behöver en snabb och professionell närvaro online.</p>
+                    <h2 class="pricing-name">Flexibel Lösning</h2>
+                    <p class="pricing-price">från 850 kr<span class="pricing-price-unit"> / timme</span></p>
+                    <p class="pricing-desc">Ett smart val för mindre uppdrag, snabba förbättringar och webbprojekt där du vill komma igång snabbt och bara betala för faktiskt arbete — inte ett fast pris per hemsida.</p>
                     <ul class="pricing-features">
-                        <li>1-3 sidor</li>
-                        <li>Mobilanpassad design</li>
-                        <li>Kontaktformulär</li>
-                        <li>Grundläggande SEO</li>
+                        <li>Perfekt för mindre uppdrag och snabba ändringar</li>
+                        <li>Du betalar bara för faktiskt utfört arbete</li>
+                        <li>Ingen fast kostnad per hemsida</li>
+                        <li>Flexibelt upplägg som anpassas efter behov</li>
                     </ul>
-                    <button class="btn btn-primary btn-block" data-wizard="start" data-package="Start - För Nya Företag">Starta projekt</button>
+                    <button class="btn btn-primary btn-block" data-wizard="start" data-package="Start - Flexibel Lösning">Börja med timpris</button>
                 </article>
 
-                <article class="pricing-card pricing-card-featured">
+                <article class="pricing-card">
+                    <p class="pricing-badge">Ingen löpande kostnad</p>
                     <p class="pricing-tier">Growth</p>
-                    <h2 class="pricing-name">För Etablerad Närvaro</h2>
+                    <h2 class="pricing-name">Permanent Lösning</h2>
                     <p class="pricing-price">från 15 000 kr</p>
-                    <p class="pricing-desc">För dig som vill ha en tydlig, professionell och varumärkesstark webbplats.</p>
+                    <p class="pricing-desc">För dig som vill ha en tydlig, professionell och ägd webbplats utan månadsavgift eller löpande kostnad.</p>
                     <ul class="pricing-features">
-                        <li>4-8 sidor</li>
-                        <li>Custom design & struktur</li>
+                        <li>4-8 sidor med custom design &amp; struktur</li>
+                        <li>Ingen löpande kostnad</li>
+                        <li>Du äger webbplatsen fullt ut</li>
                         <li>Tydliga CTA-flöden och informationsstruktur</li>
                         <li>Teknisk SEO + prestandaoptimering</li>
                     </ul>
-                    <button class="btn btn-primary btn-block" data-wizard="growth" data-package="Growth - För Etablerad Närvaro">Starta Projekt</button>
+                    <button class="btn btn-primary btn-block" data-wizard="growth" data-package="Growth - Permanent Lösning">Starta Projekt</button>
                 </article>
 
                 <article class="pricing-card">
@@ -174,21 +138,157 @@
 
             <aside class="pricing-clarity" aria-label="Information om upplägg och tillägg">
                 <h2>Enkelt, smidigt och prisvärt upplägg</h2>
-                <p>Jag fokuserar på att göra det enkelt, smidigt och kostnadseffektivt för ditt företag att komma igång snabbt. Därför ingår inte löpande förvaltning eller liknande tjänster i grundpaketen.</p>
-                <p>Behöver du underhåll, uppdateringar eller fortsatt stöd efter lansering går det att lägga till separat.</p>
+                <p>Jag fokuserar på att göra det enkelt, smidigt och kostnadseffektivt för ditt företag att komma igång snabbt. Därför ingår inte löpande förvaltning i grundpaketen — du betalar bara för det du faktiskt behöver.</p>
+                <p>Behöver du underhåll, uppdateringar eller fortsatt stöd efter lansering går det att lägga till separat (se tillägg nedan).</p>
             </aside>
+        </div>
+    </section>
 
-            <aside class="hosting-offer" aria-label="Webhotell som tillval">
-                <div class="hosting-offer-top">
-                    <p class="pricing-tier">Webhotell</p>
+    <section class="template-offer-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-1"></span>
+            <span class="hero-bubble hero-bubble-2"></span>
+            <span class="hero-bubble hero-bubble-3"></span>
+            <span class="hero-bubble hero-bubble-4"></span>
+        </div>
+        <div class="container">
+            <div class="template-offer-intro">
+                <p class="pricing-tier">Express-alternativ</p>
+                <h2 class="section-heading">Snabbaste vägen igång</h2>
+                <p class="section-lead">Behöver du bara komma online snabbt? Välj en färdig mall så anpassar jag den med ditt innehåll, dina färger och ditt budskap.</p>
+            </div>
+            <div class="template-offer-grid">
+                <article class="template-offer-card">
+                    <p class="pricing-tier">Template-nivå</p>
+                    <h2 class="pricing-name">Snabb Start Med Färdig Struktur</h2>
+                    <p class="pricing-price">från 4 000 kr</p>
+                    <p class="pricing-desc">En icke-skräddarsydd lösning där du väljer en färdig mall som jag anpassar med ditt innehåll, färger och budskap.</p>
+                    <ul class="pricing-features">
+                        <li>1-2 sidor med färdig struktur</li>
+                        <li>Design från template</li>
+                        <li>Anpassning till varumärke och innehåll</li>
+                        <li>Grundläggande SEO</li>
+                    </ul>
+                    <button class="btn btn-primary" data-wizard="template" data-package="Template - Snabb Start Med Färdig Struktur">Starta projekt</button>
+                </article>
+
+                <aside class="template-preview" aria-label="Preview av template-upplägg">
+                    <video class="template-preview-video" src="media/videos/Template video 480p.mp4" autoplay muted loop playsinline poster="media/images/TIOM%20Web%20OG%20Banner.svg" style="width:100%;border-radius:1rem;margin-bottom:1rem;object-fit:cover;" aria-label="Videoexempel på template-anpassning"></video>
+                    <a href="https://template.tiom.nu" class="btn btn-secondary btn-block" style="margin-top:1rem;" target="_blank" rel="noopener">Se exempelanpassningar för olika industrier -&gt;</a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="hosting-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-2"></span>
+            <span class="hero-bubble hero-bubble-3"></span>
+            <span class="hero-bubble hero-bubble-5"></span>
+        </div>
+        <div class="container">
+            <div class="hosting-card">
+                <div class="hosting-card-main">
+                    <p class="pricing-tier">Hosting + säkerhet</p>
+                    <h2 class="pricing-name">Drift med säkerhet i fokus</h2>
+                    <p class="pricing-price">150 kr<span class="pricing-price-unit"> / mån</span></p>
+                    <p class="pricing-desc">Vill du att jag sköter driften? Då får du inte bara hosting — du får en webbplats som är granskad och konfigurerad enligt samma säkerhetsstandard som banker och myndigheter använder.</p>
+                    <ul class="pricing-features hosting-features">
+                        <li>HTTPS/SSL-certifikat, automatiskt förnyat</li>
+                        <li>Säkerhetsheaders konfigurerade (CSP, HSTS, X-Frame-Options m.fl.)</li>
+                        <li>Löpande säkerhetsuppdateringar</li>
+                        <li>Regelbunden backup</li>
+                        <li>Stabil drift och snabb publicering av ändringar</li>
+                        <li>Fast pris — inga överraskningar</li>
+                    </ul>
+                    <a href="index.html#contact" class="btn btn-primary">Lägg till hosting</a>
                 </div>
-                <p>Jag erbjuder webhotell för 150 kr/mån som ett enkelt tillval om du vill att jag sköter drift och publicering.</p>
-                <ul class="hosting-list">
-                    <li>Drift och publicering</li>
-                    <li>Löpande uppdateringar vid behov</li>
-                    <li>Fast pris: 150 kr/mån</li>
-                </ul>
-            </aside>
+                <aside class="hosting-card-badge" aria-label="Säkerhetsbetyg">
+                    <div class="security-badge">
+                        <p class="security-badge-label">Security Headers</p>
+                        <p class="security-badge-grade">A+</p>
+                        <p class="security-badge-note">Oberoende säkerhetstest</p>
+                    </div>
+                    <p class="hosting-badge-caption">Alla sidor jag bygger uppnår betyg <strong>A eller A+</strong> på <a href="https://securityheaders.com" target="_blank" rel="noopener">securityheaders.com</a> — ett oberoende test som mäter hur väl en webbplats skyddar besökarna mot vanliga attacker.</p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="compare-section bubble-zone">
+        <div class="hero-bubbles" aria-hidden="true">
+            <span class="hero-bubble hero-bubble-1"></span>
+            <span class="hero-bubble hero-bubble-4"></span>
+            <span class="hero-bubble hero-bubble-6"></span>
+        </div>
+        <div class="container">
+            <h2 class="section-heading">Jämför paketen</h2>
+            <p class="section-lead">En snabb översikt av vad som ingår.</p>
+            <div class="compare-table-wrap">
+                <table class="compare-table">
+                    <caption class="visually-hidden">Jämförelse mellan paketen Template, Start, Growth och Scale</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Template</th>
+                            <th scope="col" class="compare-col-featured">Start</th>
+                            <th scope="col">Growth</th>
+                            <th scope="col">Scale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Pris</th>
+                            <td>från 4 000 kr</td>
+                            <td class="compare-col-featured">850 kr/h</td>
+                            <td>från 15 000 kr</td>
+                            <td>offert</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Antal sidor</th>
+                            <td>1-2</td>
+                            <td class="compare-col-featured">flexibelt</td>
+                            <td>4-8</td>
+                            <td>8+ / e-handel</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Skräddarsydd design</th>
+                            <td><span class="compare-cross" aria-label="Ingår inte">–</span></td>
+                            <td class="compare-col-featured"><span class="compare-check" aria-label="Ingår">✓</span></td>
+                            <td><span class="compare-check" aria-label="Ingår">✓</span></td>
+                            <td><span class="compare-check" aria-label="Ingår">✓</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SEO</th>
+                            <td>Grundläggande</td>
+                            <td class="compare-col-featured">Efter behov</td>
+                            <td>Teknisk + prestanda</td>
+                            <td>Utökad struktur</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Integrationer (CRM, formulär m.m.)</th>
+                            <td><span class="compare-cross" aria-label="Ingår inte">–</span></td>
+                            <td class="compare-col-featured">Efter behov</td>
+                            <td>Efter behov</td>
+                            <td><span class="compare-check" aria-label="Ingår">✓</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Du äger webbplatsen</th>
+                            <td><span class="compare-check" aria-label="Ja">✓</span></td>
+                            <td class="compare-col-featured"><span class="compare-check" aria-label="Ja">✓</span></td>
+                            <td><span class="compare-check" aria-label="Ja">✓</span></td>
+                            <td><span class="compare-check" aria-label="Ja">✓</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Drift</th>
+                            <td>Hosting: 150 kr/mån</td>
+                            <td class="compare-col-featured">Hosting: 150 kr/mån</td>
+                            <td>Ingen löpande kostnad</td>
+                            <td>Hosting eller egen miljö</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
@@ -203,9 +303,9 @@
             <p class="section-lead">Lägg till funktioner när du behöver dem.</p>
             <div class="addons-grid">
                 <div class="addon-item">
-                    <h3>Löpande underhåll</h3>
-                    <p class="addon-desc">Håll sidan snabb, uppdaterad och trygg utan att du behöver lyfta ett finger.</p>
-                    <p class="addon-price">från 1 490 kr / mån</p>
+                    <h3>Inlägg och uppdateringar</h3>
+                    <p class="addon-desc">Håll sajten levande med nytt innehåll som stärker förtroende och synlighet.</p>
+                    <p class="addon-price">från 500 kr</p>
                 </div>
                 <div class="addon-item">
                     <h3>Extra landningssida</h3>
@@ -213,14 +313,14 @@
                     <p class="addon-price">från 1 000 kr</p>
                 </div>
                 <div class="addon-item">
-                    <h3>Inlägg och uppdateringar</h3>
-                    <p class="addon-desc">Håll sajten levande med nytt innehåll som stärker förtroende och synlighet.</p>
-                    <p class="addon-price">från 500 kr</p>
+                    <h3>Löpande innehållsförvaltning</h3>
+                    <p class="addon-desc">Aktiv förvaltning där jag hjälper dig hålla sidan uppdaterad med nytt innehåll, justeringar och förbättringar varje månad.</p>
+                    <p class="addon-price">från 1 490 kr / mån</p>
                 </div>
                 <div class="addon-item">
                     <h3>SEO-fördjupning</h3>
                     <p class="addon-desc">Ta nästa steg i Google med djupare optimering av innehåll, teknik och struktur.</p>
-                    <p class="addon-price">från 4 900 kr</p>
+                    <p class="addon-price">från 4 900 kr / mån</p>
                 </div>
             </div>
         </div>
@@ -248,11 +348,19 @@
             </details>
             <details class="faq-item">
                 <summary>Ingår support efter lansering?</summary>
-                <p>Nej, för att hålla priserna låga är support och uppdateringar ett tillval.</p>
+                <p>Support är ett tillval så att du bara betalar för det du faktiskt behöver — det håller priserna nere för dig som vill ha en webbplats du äger själv. Behöver du löpande hjälp finns innehållsförvaltning från 1 490 kr/mån.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Vad är skillnaden mellan hosting och löpande innehållsförvaltning?</summary>
+                <p><strong>Hosting (150 kr/mån)</strong> är den tekniska driften — servern, SSL-certifikat, säkerhetsheaders, backup och uppdateringar som håller sidan online och säker. <strong>Innehållsförvaltning (från 1 490 kr/mån)</strong> är aktivt arbete med själva sidan — nya texter, bilder, justeringar och förbättringar varje månad. Du kan välja det ena, det andra eller båda.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Vad menar du med "A+ på securityheaders"?</summary>
+                <p>Securityheaders.com är ett oberoende test som mäter hur väl en webbplats är konfigurerad mot vanliga attacker (clickjacking, cross-site scripting m.m.). Alla webbplatser jag hostar konfigureras för att uppnå betyg A eller A+ — samma nivå som de flesta banker och myndigheter ligger på.</p>
             </details>
             <details class="faq-item">
                 <summary>Erbjuder du hosting?</summary>
-                <p>Ja. Hosting erbjuds som ett separat tillval med löpande kostnad, så du kan välja det endast om du behöver det.</p>
+                <p>Ja. Hosting är ett separat tillval på 150 kr/mån, så du kan välja det endast om du behöver det. I hostingen ingår även den säkerhetskontroll som ger A/A+-betyg.</p>
             </details>
         </div>
     </section>
@@ -268,8 +376,39 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 TIOM Web. Alla rättigheter förbehållna.</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo" aria-label="TIOM Web - Hem">
+                    <img src="media/images/TIOM Black.svg" alt="TIOM Web" loading="lazy" decoding="async">
+                </a>
+                <p class="footer-tagline">Webbutveckling för svenska företag som vill ha en snygg, snabb och säker webbplats — med fokus på tydlig kommunikation, kvalitet och långsiktigt värde.</p>
+            </div>
+            <nav class="footer-col" aria-label="Sidlänkar">
+                <h2 class="footer-heading">Sidor</h2>
+                <ul class="footer-list">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="process.html">Så går det till</a></li>
+                    <li><a href="pricing.html">Priser</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2 class="footer-heading">Kontakt</h2>
+                <ul class="footer-list footer-contact">
+                    <li><a href="mailto:tiom.info@gmail.com">tiom.info@gmail.com</a></li>
+                    <li><a href="tel:+46706533535">+46 70 653 35 35</a></li>
+                    <li><span>Linköping, Sverige</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 TIOM Web. Alla rättigheter förbehållna.</p>
+                <ul class="footer-legal">
+                    <li><a href="villkor.html">Villkor</a></li>
+                    <li><a href="integritetspolicy.html">Integritetspolicy</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 
