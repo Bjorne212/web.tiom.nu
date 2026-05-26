@@ -28,7 +28,7 @@
     --color-bg: #ffffff;
     --color-bg-soft: #ffffff;
     --color-border: #bdbdbd;
-    --font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-family: 'Plus Jakarta Sans', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 * {
@@ -688,59 +688,6 @@ section {
    STATS SECTION - CREDIBILITY
    ======================================== */
 
-.stats-section {
-    padding: 2.4rem 0;
-    background: #ffffff;
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.9rem;
-}
-
-.stat-item {
-    padding: 1.1rem 1rem 1rem;
-    border-radius: 0.75rem;
-    border: 1px solid #bdbdbd;
-    background: #ffffff;
-    text-align: left;
-    transition: all 0.25s ease;
-    box-shadow: 0 2px 8px rgba(11, 18, 32, 0.04);
-}
-
-.stat-item:hover {
-    transform: translateY(-2px);
-    border-color: #bdbdbd;
-    box-shadow: 0 8px 20px rgba(17, 36, 74, 0.08);
-}
-
-.stat-kicker {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-weight: 700;
-    color: #575757;
-    margin-bottom: 0.45rem;
-}
-
-.stat-number {
-    font-size: 2.3rem;
-    font-weight: 800;
-    color: var(--color-primary);
-    margin-bottom: 0.25rem;
-    line-height: 1;
-}
-
-.stat-label {
-    font-size: 0.85rem;
-    color: var(--color-text-light);
-    font-weight: 500;
-    line-height: 1.45;
-}
-
 /* ========================================
    PROJECTS SHOWCASE - VISUAL IMPACT
    ======================================== */
@@ -933,25 +880,6 @@ section {
 .pricing-clarity:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(0, 78, 152, 0.12);
-}
-
-.pricing-clarity-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    margin-bottom: 0.55rem;
-}
-
-.pricing-clarity-tags span {
-    font-size: 0.74rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #004e98;
-    background: #ffffff;
-    border: 1px solid #bdbdbd;
-    border-radius: 999px;
-    padding: 0.26rem 0.52rem;
 }
 
 .pricing-clarity h2 {
@@ -1190,61 +1118,6 @@ section {
     padding: 1rem;
 }
 
-.template-preview-browser {
-    background: #ffffff;
-    border: 1px solid #bdbdbd;
-    border-radius: 0.7rem;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(17, 36, 74, 0.1);
-}
-
-.template-preview-topbar {
-    height: 2rem;
-    border-bottom: 1px solid #bdbdbd;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0 0.6rem;
-}
-
-.template-preview-topbar span {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 999px;
-    background: #bdbdbd;
-}
-
-.template-preview-content {
-    padding: 0.75rem;
-}
-
-.template-preview-hero {
-    height: 7.2rem;
-    border-radius: 0.5rem;
-    background: linear-gradient(135deg, #3a6ea5 0%, #004e98 100%);
-    margin-bottom: 0.65rem;
-}
-
-.template-preview-cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.45rem;
-}
-
-.template-preview-card {
-    height: 3.8rem;
-    border-radius: 0.4rem;
-    background: #ffffff;
-    border: 1px solid #bdbdbd;
-}
-
-.template-preview-caption {
-    margin-top: 0.7rem;
-    font-size: 0.83rem;
-    color: #575757;
-}
-
 .pricing-card {
     background: #ffffff;
     border: 1px solid var(--color-border);
@@ -1263,11 +1136,6 @@ section {
     border-color: #bdbdbd;
     box-shadow: 0 14px 30px rgba(29, 78, 216, 0.15);
     transform: translateY(-3px);
-}
-
-.pricing-card-template {
-    border-color: #bdbdbd;
-    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
 }
 
 .pricing-badge {
@@ -1677,10 +1545,6 @@ section {
     height: 0.42rem;
     border-radius: 999px;
     background: #ff6700;
-}
-
-.process-divider {
-    display: none;
 }
 
 .process-footnote {
@@ -2316,10 +2180,6 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .template-preview-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .hosting-card {
         grid-template-columns: 1fr;
         padding: 1.25rem;
@@ -2351,19 +2211,6 @@ section {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .stats-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.7rem;
-    }
-
-    .stat-item {
-        padding: 0.95rem 0.85rem 0.85rem;
-    }
-
-    .stat-number {
-        font-size: 2rem;
-    }
-    
     .hero {
         padding: 4rem 0;
     }
@@ -2406,13 +2253,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .template-preview-cards {
-        grid-template-columns: 1fr;
-    }
 
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* ========================================

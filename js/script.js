@@ -37,9 +37,6 @@ if (contactForm) {
             message: formData.get('message')
         };
         
-        // Log form data (in production, send to backend)
-        console.log('Form submitted:', data);
-        
         // Show success message
         const submitButton = this.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
@@ -181,50 +178,8 @@ if (bubbleSections.length > 0) {
     window.addEventListener('resize', onBubbleScroll);
 }
 
-// Counter animation for stats
-const animateCounters = () => {
-    const statNumbers = document.querySelectorAll('.stat-number');
-    
-    statNumbers.forEach(stat => {
-        const text = stat.textContent;
-        const value = parseInt(text);
-        
-        if (!isNaN(value)) {
-            let current = 0;
-            const increment = value / 30;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= value) {
-                    stat.textContent = text;
-                    clearInterval(timer);
-                } else {
-                    stat.textContent = Math.floor(current) + '+';
-                }
-            }, 30);
-        }
-    });
-};
-
-// Trigger counter animation when visible
-if ('IntersectionObserver' in window) {
-    const statsSection = document.querySelector('.stats-section');
-    if (statsSection) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        observer.observe(statsSection);
-    }
-}
-
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('TIOM Web loaded');
     initWizard();
 });
 
@@ -425,9 +380,6 @@ function handleSubmit() {
         source: 'wizard',
         isTemplate: wizardState.isTemplate
     };
-    
-    // Submit in background (log to console in this version)
-    console.log('Order submitted:', formData);
     
     // Show success message
     showStep(3);
